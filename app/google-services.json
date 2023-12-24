@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "926675118277",
+    "project_id": "dbmessenger-a6923",
+    "storage_bucket": "dbmessenger-a6923.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926675118277:android:1634d2db6b880910d828ac",
+        "android_client_info": {
+          "package_name": "com.example.dbmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926675118277-dsslelds0kpo8u3pp9p8nh9erht8jsrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAitGoIBN9jqXDiNKIxs5ZThRdfCGzZ8PM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926675118277-dsslelds0kpo8u3pp9p8nh9erht8jsrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
