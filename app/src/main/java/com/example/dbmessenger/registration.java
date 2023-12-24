@@ -37,7 +37,6 @@ public class registration extends AppCompatActivity {
     String emailPattern ="[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     FirebaseDatabase database;
     FirebaseStorage storage;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
