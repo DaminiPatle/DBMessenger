@@ -150,7 +150,7 @@
         app:layout_constraintVertical_bias="0.96" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/logsignup"
         android:layout_width="@dimen/_124sdp"
         android:layout_height="24dp"
         android:gravity="center"
