@@ -202,11 +202,11 @@ public class chatWin extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
 
+
         mmessangesAdpter = findViewById(R.id.msgadpter);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setStackFromEnd(true);
         mmessangesAdpter.setLayoutManager(linearLayoutManager);
-        messagessArrayList = new ArrayList<>();
         messagesAdpter = new messagesAdpter(chatWin.this, messagessArrayList);
         mmessangesAdpter.setAdapter(messagesAdpter);
 
@@ -227,13 +227,13 @@ public class chatWin extends AppCompatActivity {
         senderRoom = SenderUID + reciverUid;
         reciverRoom = reciverUid + SenderUID;
 
-        DatabaseReference reference = database.getReference().child("user").child(SenderUID);
-        DatabaseReference chatreference = database.getReference().child("chats").child(senderRoom).child("messages");
+        DatabaseReference reference = database.getReference().child("user").child(firebaseAuth.getUid());
+        DatabaseReference chatreference = database.getReference().child("user").child(senderRoom).child("messages");
 
         chatreference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                messagessArrayList.clear();
+              //  messagessArrayList.clear();
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     msgModelclass messages = dataSnapshot.getValue(msgModelclass.class);
                     messagessArrayList.add(messages);
