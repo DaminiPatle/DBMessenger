@@ -1,9 +1,12 @@
 package com.example.dbmessenger;
 
+import static android.os.Build.VERSION_CODES.R;
+
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseDatabase database;
     ArrayList<Users>usersArrayList;
     ImageView imglogout;
+    ImageView cumbut,setbut;
 
 
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
@@ -41,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
         database =FirebaseDatabase.getInstance();
         auth =FirebaseAuth.getInstance();
+        cumbut = findViewById(R.id.camBut);
+        setbut = findViewById(R.id.settingBut);
 
         DatabaseReference reference =database.getReference().child("user");
         usersArrayList =new ArrayList<>();
@@ -95,6 +101,23 @@ public class MainActivity extends AppCompatActivity {
 
                                      }
         );
+
+        setbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,setting.class);
+                startActivity(intent);
+            }
+        });
+
+        cumbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+               startActivityForResult(intent, 10);
+
+            }
+        });
 
 
 

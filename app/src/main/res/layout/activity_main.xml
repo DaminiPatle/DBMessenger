@@ -68,6 +68,7 @@
         android:layout_marginBottom="158dp" />
 
     <ImageView
+        android:id="@+id/camBut"
         android:layout_width="71dp"
         android:layout_height="49dp"
         android:layout_alignParentEnd="true"
@@ -90,6 +91,7 @@
         android:src="@drawable/chat" />
 
     <ImageView
+        android:id="@+id/settingBut"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:layout_alignParentEnd="true"
