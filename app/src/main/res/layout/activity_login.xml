@@ -90,6 +90,7 @@
         android:id="@+id/editTextLogEmailAddress"
         android:layout_width="@dimen/_260sdp"
         android:layout_height="@dimen/_52sdp"
+        android:background="@drawable/edit_text_outline"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -107,6 +108,7 @@
         android:id="@+id/editTextLogPassword"
         android:layout_width="@dimen/_260sdp"
         android:layout_height="@dimen/_52sdp"
+        android:background="@drawable/edit_text_outline"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -120,12 +122,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.784" />
 
+
     <Button
         android:id="@+id/Logbutton"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_45sdp"
         android:backgroundTint="@color/black"
         android:text="LOGIN"
+        android:textColor="@color/white"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -7,4 +7,26 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Primary Brand Colors -->
+    <color name="primary_purple_200">#FFBB86FC</color>
+    <color name="primary_purple_500">#FF6200EE</color>
+    <color name="primary_purple_700">#FF3700B3</color>
+
+    <!-- Secondary Brand Colors -->
+    <color name="secondary_teal_200">#FF03DAC5</color>
+    <color name="secondary_teal_700">#FF018786</color>
+
+    <!-- Basic Colors -->
+    <color name="basic_black">#FF000000</color>
+    <color name="basic_white">#FFFFFFFF</color>
+
+    <!-- Semantic Colors -->
+    <color name="text_primary">@color/basic_black</color>
+    <color name="text_secondary">#808080</color> <!-- Example: Gray for less emphasis -->
+    <color name="background_default">@color/basic_white</color>
+    <color name="button_background_primary">@color/primary_purple_500</color>
+    <color name="button_text_primary">@color/basic_white</color>
+    <color name="error">#FF0000</color> <!-- Example: Red for errors -->
+    <color name="success">#008000</color> <!-- Example: Green for success -->
+    <color name="warning">#FFA500</color>
 </resources>
